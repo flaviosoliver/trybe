@@ -1,0 +1,3 @@
+[submodule "my_shell_scripts"]
+	path = my_shell_scripts
+	url = git@github.com:flaviosoliver/my_shell_scripts.git
