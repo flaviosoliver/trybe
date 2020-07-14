@@ -17,31 +17,33 @@
 
   //   Exemplo: bishop -> diagonals  
 
-    var chessPiece = 'bispo';
+  let nomeDaPeca = "cavalo"
 
-    switch (chessPiece.toLowerCase()) {
-      case 'rei':
-        console.log('Rei-> Uma casa apenas para qualquer direção.');
-        break;
-      case 'bispo':
-        console.log('Bispo-> Diagonal.');
-        break;
-      case 'rainha':
-        console.log('Rainha-> Diagonal e horizontal.');
-        break;
-      case 'cavalo':
-        console.log('Cavalo -> "L" pode pular sobre as peças.');
-        break;
-      case 'torre':
-        console.log('Torre -> Horizontal.');
-        break;
-      case 'peão':
-        console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
-        break;
-      default:
-        console.log('Erro, peça inválida!');
-        break;
-    }
+  switch (nomeDaPeca.toLowerCase()) {
+    case "peao":
+      console.log("pode mover apenas para frente um casa, no primeiro movimento pode ser duas casas");
+      break;
+    case "peão":
+      console.log("pode mover apenas para frente uma casa, no primeiro movimento pode ser duas casas");
+      break;
+    case "torre":
+      console.log("pode mover apenas na horizontal");
+      break;
+    case "cavalo":
+      console.log("pode mover na horizontal ou vertical, formando um L");
+      break;
+    case "bispo":
+      console.log("pode se mover na diagonal");
+      break;
+    case "rainha":
+      console.log("pode se mover em qualquer direção em linha reta, vertical, horizontal e diagonal");
+      break;
+    case "rei":
+      console.log("pode se mover uma casa em qualquer direção: vertical, horizontal e diagonal")
+    default:
+      console.log("Peça inválida")
+      break;
+  }
 
   </script>
   
