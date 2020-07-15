@@ -4,48 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<body>
+
   <script>
-  // Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+    // Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+  
+    //   Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+  
+    //   Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
+  
+    //   Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+  
+    //   Exemplo: bishop -> diagonals  
+  
+    let nomeDaPeca = "cavalo"
+  
+    switch (nomeDaPeca.toLowerCase()) {
+      case "peao":
+        console.log("pode mover apenas para frente um casa, no primeiro movimento pode ser duas casas");
+        break;
+      case "peão":
+        console.log("pode mover apenas para frente uma casa, no primeiro movimento pode ser duas casas");
+        break;
+      case "torre":
+        console.log("pode mover apenas na horizontal");
+        break;
+      case "cavalo":
+        console.log("pode mover na horizontal ou vertical, formando um L");
+        break;
+      case "bispo":
+        console.log("pode se mover na diagonal");
+        break;
+      case "rainha":
+        console.log("pode se mover em qualquer direção em linha reta, vertical, horizontal e diagonal");
+        break;
+      case "rei":
+        console.log("pode se mover uma casa em qualquer direção: vertical, horizontal e diagonal")
+      default:
+        console.log("Peça inválida")
+        break;
+    }
+  
+    </script>
 
-  //   Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+</head>
 
-  //   Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
+<body>
 
-  //   Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
-
-  //   Exemplo: bishop -> diagonals  
-
-  let nomeDaPeca = "cavalo"
-
-  switch (nomeDaPeca.toLowerCase()) {
-    case "peao":
-      console.log("pode mover apenas para frente um casa, no primeiro movimento pode ser duas casas");
-      break;
-    case "peão":
-      console.log("pode mover apenas para frente uma casa, no primeiro movimento pode ser duas casas");
-      break;
-    case "torre":
-      console.log("pode mover apenas na horizontal");
-      break;
-    case "cavalo":
-      console.log("pode mover na horizontal ou vertical, formando um L");
-      break;
-    case "bispo":
-      console.log("pode se mover na diagonal");
-      break;
-    case "rainha":
-      console.log("pode se mover em qualquer direção em linha reta, vertical, horizontal e diagonal");
-      break;
-    case "rei":
-      console.log("pode se mover uma casa em qualquer direção: vertical, horizontal e diagonal")
-    default:
-      console.log("Peça inválida")
-      break;
-  }
-
-  </script>
   
   <h1>Hello, World!</h1>
   <h3>Vamos nessa...</h3>
